@@ -1,0 +1,43 @@
+// CSS-based Buttons
+.button
+  //+background(linear-gradient(top, #FFF, #EAEAEA))
+  +linear-gradient(#FFF, #EAEAEA)
+  display: inline-block
+  padding: .9em 1.5em
+  font-family: helvetica, arial, sans-serif
+  font-size: 18px
+  font-weight: bold
+  color: #515151
+  border: 1px solid #333
+  +box-shadow(rgba(255, 255, 255, .2) 0 0 0 1px)
+  +text-shadow(rgba(255, 255, 255, .5) 0 1px 0)
+  +border-radius(5px)
+
+  text-decoration: none
+
+  &:hover
+    cursor: pointer
+    +background(linear-gradient(top, #FFF, #FFF))
+    +linear-gradient(#FFF, #FFF)
+    text-decoration: none
+
+  &.secondary
+    //+background(linear-gradient(top, #EAEAEA, #A8A8A8))
+    +linear-gradient(#EAEAEA, #A8A8A8)
+    &:hover
+      //+background(linear-gradient(top, #FFF, #C1C1C1))
+      +linear-gradient(#FFF, #C1C1C1)
+    &:active
+      //+background(linear-gradient(top, #B3B3B3, #CDCDCD))
+      +linear-gradient(#B3B3B3, #CDCDCD)
+
+  &.primary
+    //+background(linear-gradient(top, #AFFA8E, #6FCF38))
+    +linear-gradient(#AFFA8E, #6FCF38)
+    color: #3C5E28
+    &:hover
+      //+background(linear-gradient(top, #C6FEAE, #7AE741))
+      +linear-gradient(#C6FEAE, #7AE741)
+    &:active
+      //+background(linear-gradient(top, #6ECE37, #85E24F))
+      +linear-gradient(#6ECE37, #85E24F)

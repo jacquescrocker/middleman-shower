@@ -1,0 +1,220 @@
+@import "compass"
+@import "buttons"
+
+.clear
+  clear: both
+
+header.caption
+  position: relative
+  .button.primary
+    position: absolute
+    left: 460px
+    top: 20px
+    white-space: nowrap
+
+.slide
+  h3
+    font-size: 40px
+    font-weight: bold
+    .subhead
+      font-size: 25px
+
+  // updating lists
+  ol, ul
+    margin-top: -40px
+
+  &.shout
+    h2
+      font-size: 80px
+      line-height: 1.5
+      width: 600px
+      margin: 0 auto
+      left: 0
+      right: 0
+
+  &.bg
+    h2, h3
+      color: #fff
+      text-shadow: 0px 0px 3px #000
+
+
+#Cover
+  h2
+    text-align: left
+    font-size: 70px
+    margin-left: -64px
+    margin-top: -29px
+  h3
+    display: block
+    font-size: 40px
+    margin-left: -64px
+    text-align: left
+  .cover-info
+    color: #fff
+    line-height: 1.2
+    margin-left: -64px
+    padding-top: 50px
+    strong
+      text-shadow: 0px 0px 3px #000
+    a
+      color: blue
+
+#Intro3
+  section
+    text-align: center
+  h2
+    font-size: 80px
+    margin-left: -30px
+    margin-right: -30px
+    margin-top: 290px
+  h3
+    font-size: 40px
+
+// About Me
+#About1
+  .about
+    margin-top: -30px
+    margin-bottom: 00px
+    .me
+      float: left
+      background-image: url(../pictures/me.jpg)
+      background-repeat: no-repeat
+      width: 231px
+      height: 231px
+      margin-right: 30px
+    h3
+      margin-bottom: -10px
+    h4
+      margin-top: -10px
+
+  .social-panels
+    height: 100px
+    position: relative
+    clear: both
+    margin-top: 20px
+
+    .social-panel
+      width: 33%
+      height: 100px
+      position: absolute
+      text-align: center
+      font-size: 20px
+
+      .logo
+        display: inline-block
+        background-repeat: no-repeat
+
+      &.twitter
+        left: 0
+        .logo
+          background-image: url(../pictures/logos/twitter.jpg)
+          width: 145px
+          height: 49px
+
+      &.github
+        left: 33%
+        .logo
+          background-image: url(../pictures/logos/github.jpg)
+          width: 145px
+          height: 49px
+
+      &.angellist
+        right: 0
+        .logo
+          background-image: url(../pictures/logos/angellist.jpg)
+          width: 145px
+          height: 49px
+
+// About my current startup
+#About2
+  .about
+    margin: 0 auto
+    width: 700px
+    .logo
+      float: left
+      background-image: url(../pictures/logos/seconds.png)
+      background-repeat: no-repeat
+      width: 257px
+      height: 68px
+      margin-top: 20px
+    h3
+      margin-left: 300px
+      line-height: 1.2
+      font-weight: normal
+    .url
+      width: 257px
+      text-align: center
+      margin-top: -5px
+  .info
+    width: 40%
+    margin-top: 40px
+    &.col1
+      float: left
+      margin-left: 10%
+    &.col2
+      float: right
+      margin-right: 10%
+
+  h4
+    line-height: 1.2
+    label
+      font-style: italic
+    strong
+      color: green
+
+  .tech
+    text-align: left
+    margin-top: 30px
+    margin-left: 80px
+    h4
+      line-height: 1.2
+
+#About3, #About4
+  &.slide
+    li
+      line-height: 1.2
+    ul ul > li::before
+      content: ''
+    ul ul
+      margin-left: 0
+    ul ul
+      padding-bottom: 15px
+
+#Idea1
+  h2
+    width: 900px
+
+#Idea2
+  ul
+    margin-top: 0
+
+#Idea3
+  ul > li::before
+    content: ''
+
+  ul
+    font-size: 40px
+
+#Dev3
+  h2
+    font-size: 60px
+    margin-top: -70px
+
+
+#Monetize2
+  .about
+    .logo
+      float: left
+      width: 445px
+      height: 341px
+      background-image: url(../pictures/logos/stripe.png)
+      background-repeat: no-repeat
+      margin-right: 40px
+      margin-left: -40px
+
+
+
+// Cloud FTW
+#Deploy2
+  h2
+    font-size: 120px

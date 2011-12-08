@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <title><%= presentation_title %></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1274, user-scalable=no">
+  <link rel="stylesheet" href="themes/ribbon/styles/style.css">
+  <link rel="stylesheet" href="stylesheets/site.css">
+</head>
+<body class="list">
+  <%= yield %>
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="javascripts/script.js"></script>
+  <!-- Copyright © 2010–2011 Vadim Makeev, http://pepelsbey.net/ -->
+</body>
+</html>

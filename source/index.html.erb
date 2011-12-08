@@ -1,0 +1,9 @@
+<header class="caption">
+  <%= link_to "Start Presentation", "?full#Cover", :class => "button primary" %>
+  <h1><%= presentation_title %></h1>
+  <p><%= presentation_description %></p>
+</header>
+
+<% slides("slides").each do |slide| %>
+  <%= partial slide %>
+<% end %>
